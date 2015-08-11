@@ -1,66 +1,41 @@
-<?php include 'inc/site-url.inc.php'; ?>
+<?php include 'inc/site-url.inc.php'; ?><!--This include will content constant like - site url, CDN url and other constants-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include 'inc/before-meta.inc.php'; ?>
-	<meta charset="UTF-8">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php include 'inc/before-meta.inc.php'; ?><!--This include will content meta which are common for all pages-->
 
 	<title>Profile Template</title>
 
-	<?php include 'inc/after-meta.inc.php'; ?>
+	<?php include 'inc/after-meta.inc.php'; ?><!--This include will content base style sheets-->
 
-	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<!-- Put page based css here -->
 
-	<!-- Theme Style-->
-	<link rel="stylesheet" href="theme/theme.css">
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-   <?php include 'inc/before-body-start.inc.php'; ?>
+    <?php include 'inc/before-head-end.inc.php'; ?><!--This include will content IE Fallback css and fallbacks-->
 
 </head>
+
+
 <body>
 
- 	<?php include 'inc/after-body-start.inc.php'; ?>
+    <?php include 'inc/after-body-start.inc.php'; ?>
 
 	<header>
-		<?php include 'inc/header.inc.php'; ?>
-	 	<?php include 'inc/nav.inc.php'; ?>
+		<?php include 'inc/header.inc.php'; ?><!--This include will content header elements including navigation etc...-->
 	</header>
 
-	<div class="content">
-		
+	<div class="wrapper">
+		<!-- Main Content wrapper -->
 	</div>
 
 
 	<footer>
-		<?php include 'inc/footer.inc.php'; ?>
+		<?php include 'inc/footer.inc.php'; ?><!--This include will content footer elements-->
 	</footer>
 
-	
 
+<?php include 'inc/before-body-end.inc.php'; ?><!--This include will content javascripts are other files required after DOM is ready-->
 
-	<!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-	<!-- Bootstrap Script-->
-	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-
-	<!-- Custom JS -->
-	<script type="text/javascript" src="js/custom.js"></script>
-
-
-	<?php include 'inc/before-body-end.inc.php'; ?>
+<!-- Put page based script here -->
 	
 </body>
 </html>
